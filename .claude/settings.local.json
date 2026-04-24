@@ -5,7 +5,10 @@
       "mcp__Claude_in_Chrome__tabs_context_mcp",
       "Bash(cat)",
       "Read(//tmp/**)",
-      "WebFetch(domain:gustiyuda14-source.github.io)"
+      "WebFetch(domain:gustiyuda14-source.github.io)",
+      "Bash(curl -s -I https://gustiyuda14-source.github.io/tes-psiko-deret-angka/)",
+      "Bash(curl -s https://gustiyuda14-source.github.io/tes-psiko-deret-angka/)",
+      "Bash(curl -s -I https://gustiyuda14-source.github.io/tes-psiko-deret-angka/assets/index-DXuQvMhr.js)"
     ]
   }
 }
