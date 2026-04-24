@@ -4,6 +4,8 @@ import { TestPage } from './pages/TestPage';
 import { ResultsPage } from './components/ResultsPage';
 import './index.css';
 
+// Ensure proper GitHub Pages deployment
+
 function AppContent() {
   const { testStarted, testSubmitted } = useTest();
 
