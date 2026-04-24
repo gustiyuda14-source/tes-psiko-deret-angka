@@ -39,6 +39,12 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Verify GitHub Pages configured for Actions
+        run: |
+          echo "GitHub Pages should be configured to use 'GitHub Actions' as source"
+          echo "Repository: ${{ github.repository }}"
+          echo "Check settings at: https://github.com/${{ github.repository }}/settings/pages"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
