@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #D4AF37;
+  --color-gold-dark: #AA8C2C;
+  --color-success: #4CAF50;
+  --color-error: #E24B4A;
+  --color-warning: #FFC107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* Gold theme utilities */
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37, #AA8C2C);
+}
+
+.gold-border {
+  border-color: #D4AF37;
+}
+
+.gold-text {
+  color: #D4AF37;
+}
+
+/* Timer styling */
+.timer {
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.timer.warning {
+  color: var(--color-warning);
+  animation: pulse 1s infinite;
+}
+
+.timer.danger {
+  color: var(--color-error);
+  animation: pulse 0.5s infinite;
+}
+
+/* Grid styling for questions */
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 4px;
+}
+
+.question-number {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.question-number.unanswered {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+}
+
+.question-number.answered {
+  background-color: #FB923C;
+  color: #fff;
+  border: 1px solid #EA580C;
+}
+
+.question-number.current {
+  background-color: #D4AF37;
+  color: #0f172a;
+  border: 2px solid #AA8C2C;
+}
+
+.question-number.flagged {
+  border: 2px dashed var(--color-error);
+}
+
+.question-number:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AA8C2C;
+}

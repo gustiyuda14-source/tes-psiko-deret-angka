@@ -1,24 +1,27 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#f0f4ff',
-          100: '#e0e9ff',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
+        gold: {
+          400: '#E5C25A',
+          500: '#D4AF37',
+          600: '#AA8C2C',
+          700: '#8B6F1A',
         },
-        success: '#10b981',
-        error: '#ef4444',
-        warning: '#f59e0b',
+      },
+      keyframes: {
+        pulse: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '.7' },
+        },
       },
     },
   },
   plugins: [],
-}
+};
