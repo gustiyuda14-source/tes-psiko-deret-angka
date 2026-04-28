@@ -1,33 +1,31 @@
 {
-  "name": "my-first-project",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "cat-exam-system",
+  "version": "1.0.0",
+  "description": "Computer Adaptive Testing (CAT) Platform for SKD Exams",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^14.1.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "next-auth": "^4.24.0",
+    "@next-auth/supabase-adapter": "^1.0.0",
+    "typescript": "^5.3.3",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16",
+    "lucide-react": "^0.408.0"
   },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "@types/node": "^24.12.2",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
-    "autoprefixer": "^10.5.0",
-    "eslint": "^10.2.1",
-    "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.5.0",
-    "postcss": "^8.5.10",
-    "tailwindcss": "^3.4.1",
-    "typescript": "~6.0.2",
-    "typescript-eslint": "^8.58.2",
-    "vite": "^8.0.10"
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.1.0"
   }
 }

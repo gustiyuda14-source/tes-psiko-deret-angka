@@ -8,7 +8,12 @@
       "WebFetch(domain:gustiyuda14-source.github.io)",
       "Bash(curl -s -I https://gustiyuda14-source.github.io/tes-psiko-deret-angka/)",
       "Bash(curl -s https://gustiyuda14-source.github.io/tes-psiko-deret-angka/)",
-      "Bash(curl -s -I https://gustiyuda14-source.github.io/tes-psiko-deret-angka/assets/index-DXuQvMhr.js)"
+      "Bash(curl -s -I https://gustiyuda14-source.github.io/tes-psiko-deret-angka/assets/index-DXuQvMhr.js)",
+      "mcp__e524205a-9a39-49e1-b99d-0d9ec5d010cd__read_file_content",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'chore: Initialize CAT exam system with Next.js, TypeScript, Supabase, and NextAuth *)"
     ]
   }
 }
